@@ -11,7 +11,7 @@ from collections import Counter
 from models.seq2seq_model import EncoderRNN, DecoderRNN, Seq2Seq
 
 
-# --- Helper Functions (Moved to Global Scope) ---
+# --- Helper Functions ---
 # These functions must be defined before load_data_and_model or any other usage
 def clean_and_tokenize(text):
     if not isinstance(text, str):
@@ -247,3 +247,11 @@ This prototype demonstrates the **text generation** component for recipes.
     and exploring advanced architectures like Transformer-based models, will significantly improve coherence and detail.
 * **Full Recipe Generation:** Expanding to generate dish titles and ingredient lists, not just directions.
 """)
+# --- NEW ADDITION: Names and Student IDs ---
+st.markdown("---")
+st.subheader("Prepared by:")
+st.markdown("""
+* **Nandan Muruli** (Student ID: 10004359)
+* **Vijaykumar Veeranna** (Student ID: 100002328)
+""")
+st.markdown("---")
